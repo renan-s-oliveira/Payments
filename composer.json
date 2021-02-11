@@ -1,0 +1,29 @@
+{
+    "name": "renan-s-oliveira/payments",
+    "description": "Pacote para Laravel 8 de pagamentos [PagSeguro, MercadoPago, PicPay, PayPal e mais]",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Renan de Souza Oliveira",
+            "email": "renanoliveiradev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "^8.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Payments\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers":[
+                "Payment\\Providers\\PaymentServiceProvider"
+            ]
+        }
+    }
+}
